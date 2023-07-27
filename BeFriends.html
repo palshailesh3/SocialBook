@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeFriends</title>
+    <link rel="icon" type="image/x-icon" href="img.html\slack.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a476f23d75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav>
+      <div class="left-nav">
+         <div class="menu-btn" > <img src="img.html\menu.png" onclick="menu()"></div>
+          <img src="img.html\logo.png" >
+          <ul>
+              <li><a href="#"><img src="img.html\notification.png"></a></li>
+              <li><a href="#"><img src="img.html\inbox.png"></a></li>
+              <li><a href="#"><img src="img.html\video.png"></a></li>
+          </ul>
+      </div>
+
+      <div class="right-nav">
+         <form class="search-box">
+             <input type="image" src="img.html\search.png" width="15px">
+             <input type="text" class="text" >
+         </form>
+         <div class="profile" onclick="set()">
+            <a href="#" ><img src="img.html/profile-pic.png" class="profile-photo" ></a>
+         </div>
+      </div>
+
+      <div class="setting-menu" id="setting-menu">
+        <div class="setting-menu-inner">
+            <div class="user-info">
+                <img src="img.html\profile-pic.png">
+                <div class="about">
+                    <p>MyalBhesh</p>
+                   <a href="profile.html">See Your Profile</a>
+                </div>
+            </div>
+           <hr>
+            <div class="user-info">
+                <img src="img.html\feedback.png">
+                <div class="about">
+                    <p>Give Feedback</p>
+                    <a href="#">Help us to improve the new design</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="setting-links">
+                <img src="img.html/setting.png" >
+                <a href="#">Settings&Privacy <img src="img.html/arrow.png"></a>
+            </div>
+            <div class="setting-links">
+                <img src="img.html/help.png" >
+                <a href="#">Help&Support <img src="img.html/arrow.png" ></a>
+            </div>
+            <div class="setting-links">
+                <img src="img.html/display.png" >
+                <a href="#">Display&Accessibility <img src="img.html/arrow.png" ></a>
+            </div>
+            <div class="setting-links">
+                <img src="img.html/logout.png" >
+                <a href="#">Logout<img src="img.html/arrow.png" ></a>
+            </div>
+        </div>
+        <div class="theme-btn" id="theme-btn" onclick="theme()">
+            <span class="slider"></span>
+        </div>
+      </div>
+  </nav>
+
+  <div class="container">
+      <!-- -------------------left-sidebar--------------- -->
+      <div class="left-sidebar" id="left-sidebar">
+         <div class="imp-links" id="links">
+            <a href="#"><img src="img.html/news.png">Latest News</a>
+            <a href="#"><img src="img.html/friends.png">Friends</a>
+            <a href="#"><img src="img.html/group.png">Group</a>
+            <a href="#"><img src="img.html/marketplace.png">Marketplace</a>
+            <a href="#" id="more">Show More</a>
+            <a href="#"><img src="img.html/watch.png">Watch</a>
+            <a href="#" id="less">Show Less</a>
+         </div>
+         <div class="shortcut">
+             <p>Your Shortcuts</p>
+             <a href="#"><img src="img.html\shortcut-1.png">Web Developers</a>
+             <a href="#"><img src="img.html\shortcut-2.png">web Design Courses</a>
+             <a href="#"><img src="img.html\shortcut-3.png">Full Stack Development</a>
+             <a href="#"><img src="img.html\shortcut-4.png">Website experts</a>
+         </div>
+      </div>
+
+      <!-- -----------------main content----------------- -->
+      <div class="content">
+        <div class="story">
+            <div class="my-story">
+                <img src="img.html\profile-pic.png" class="pro-img">
+                <div class="upload-post">
+                    <img src="img.html\upload.png" class="upload">  
+                <p>post story</p>
+                </div>
+            </div>
+            <div class="my-story">
+                <img src="img.html\user-1.png" class="pro-img">
+                <img src="img.html\member-2.png" class="icon">
+                <p>pranjal</p>
+            </div>
+            <div class="my-story">
+                <img src="img.html\user-5.png" class="pro-img">
+                <img src="img.html\member-5.png" class="icon">
+                <p>amit</p>
+            </div>
+            <div class="my-story">
+                <img src="img.html\user-4.png" class="pro-img">
+                <img src="img.html\member-3.png" class="icon">
+                <p>Divya</p>
+            </div>
+            <div class="my-story">
+                <img src="img.html\user-3.png" class="pro-img">
+                <img src="img.html\member-6.png" class="icon">
+                <p>Avani</p>
+            </div>
+            <div class="my-story">
+                <img src="img.html\user-1.png" class="pro-img">
+                <img src="img.html\member-2.png" class="icon">
+                <p>bhesh</p>
+            </div>
+        </div>
+
+        <div class="write-post">
+            <div class="user-info">
+                <img src="img.html\profile-pic.png">
+                <div class="about">
+                    <p>MyalBhesh</p>
+                    <small>public<i class="fa-sharp fa-solid fa-caret-down"></i></small>
+                </div>
+            </div>
+
+            <div class="textarea">
+                <textarea rows="5" placeholder="what's on your mind,Bhesh?"></textarea>
+            </div>
+            <div class="feelings">
+                <a href="#"><img src="img.html\live-video.png" >Live Video</a>
+                <a href="#"><img src="img.html/photo.png" >Photo/Video</a>
+                <a href="#"><img src="img.html/feeling.png" >feelings/activity</a>
+            </div>
+        </div>
+         
+        <div class="post-container">
+            <div class="post-main">
+             <div class="user-info">
+                 <img src="img.html\profile-pic.png">
+                 <div class="about">
+                     <p>MyalBhesh</p>
+                    <span>june 24,2023 12:30pm</span>
+                 </div>
+             </div> 
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <p>like and share this video with friends,<span>@rankers tutorials</span> facebook page on your post.Ask your doubts in comments 
+                <a href="#">#rankers tutorials</a> <a href="#">#YoutubeChannel</a>
+             </p>
+             <img src="img.html\feed-image-1.png">
+             <div class="post-like">
+                 <div class="l-s-k">
+                     <div class="like"  id="post1"><img src="img.html/like.png" onclick="post1()" id="like-img1">120</div>
+                     <div class="comments"><img src="img.html/comment.png">21</div>
+                     <div class="share"><img src="img.html/share.png">45</div>
+                 </div>
+                 <div class="post-profile">
+                     <img src="img.html/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                 </div>
+             </div>
+         </div>
+        
+         <div class="post-container">
+            <div class="post-main">
+             <div class="user-info">
+                 <img src="img.html\profile-pic.png">
+                 <div class="about">
+                     <p>MyalBhesh</p>
+                    <span>august 24,2023 3:30pm</span>
+                 </div>
+             </div> 
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <p>like and share this video with friends,<span>@rankers tutorials</span> facebook page on your post.Ask your doubts in comments 
+                <a href="#">#rankers tutorials #subscribe</a>
+             </p>
+             <img src="img.html\feed-image-2.png">
+             <div class="post-like">
+                 <div class="l-s-k">
+                     <div class="like" id="post2"><img src="img.html/like.png" onclick="post2()" id="like-img2">150</div>
+                     <div class="comments"><img src="img.html/comment.png">41</div>
+                     <div class="share"><img src="img.html/share.png">54</div>
+                 </div>
+                 <div class="post-profile">
+                     <img src="img.html/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                 </div>
+             </div>
+         </div>
+
+         <div class="post-container">
+            <div class="post-main">
+             <div class="user-info">
+                 <img src="img.html\profile-pic.png">
+                 <div class="about">
+                     <p>MyalBhesh</p>
+                    <span>november 24,2023 1:30pm</span>
+                 </div>
+             </div> 
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <p>like and share this video with friends,<span>@rankers tutorials</span> facebook page on your post.Ask your doubts in comments 
+                <a href="#">#rankers tutorials #subscribe</a>
+             </p>
+             <img src="img.html\feed-image-3.png">
+             <div class="post-like">
+                 <div class="l-s-k">
+                     <div class="like" id="post3"><img src="img.html/like.png" onclick="post3()" id="like-img3">150</div>
+                     <div class="comments"><img src="img.html/comment.png">41</div>
+                     <div class="share"><img src="img.html/share.png">54</div>
+                 </div>
+                 <div class="post-profile">
+                     <img src="img.html/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                 </div>
+             </div>
+         </div>
+         <button class="load-more">Load More</button>
+      </div>
+
+      <!-- ------------right left-sidebar--------------- -->
+
+      <div class="right-sidebar">
+          <div class="sidebar-title">
+              <h4>Events</h4>
+              <a href="#">see all</a>
+          </div>
+          <div class="event">
+             <div class="event1">
+                <div class="date">
+                    <h4>8</h4>
+                    <p>March</p>
+                </div>
+                <div class="info">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>Wilson Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+             </div>
+             <div class="event2">
+                 <div class="date">
+                     <h4>22</h4>
+                     <p>may</p>
+                 </div>
+                 <div class="info">
+                     <h4>Mobile Marketing</h4>
+                     <p><i class="fa-solid fa-location-dot"></i>Steller It Park</p>
+                     <a href="#">More Info</a>
+                 </div>
+             </div>
+          </div>
+          <div class="advertisement" id="advertisement">
+              <div class="advertise">
+                  <h4>Advertisement</h4>
+                  <button id="close">Close</button>
+              </div>
+              <img src="img.html/advertisement.png" width="100%" height="120px">
+          </div>
+          <p id="close-add"></p>
+          <div class="conversation">
+              <div class="chat">
+                  <h4>conversation</h4>
+                  <button id="close-chat">Hide Chat</button>
+              </div>
+              <div class="chatty" id="chatty">
+                    <a href="#"><div class="chatty-img"><img src="img.html\user-1.png"></div>Shantanu</a>
+                    <a href="#"><div class="chatty-img"><img src="img.html\user-2.png"></div>Maharshi</a>
+                    <a href="#"><div class="chatty-img"><img src="img.html\user-4.png"></div>neeti</a>
+                    <a href="#"><div class="chatty-img"><img src="img.html\user-5.png"></div>Abid</a>
+                    <a href="#"><div class="chatty-img"><img src="img.html\user-3.png"></div>Anita</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer">
+      <p>Copyright 2023-rankers Tutorials YoutubeChannel</p>
+  </div>
+
+  <script>
+      
+       if(!localStorage.getItem("post1id")){
+           localStorage.setItem("post1id");
+          
+       }
+       else if(localStorage.getItem("post1id")=="like"){
+           document.getElementById('like-img1').src="img.html/like-blue.png";
+       }
+       else {
+        document.getElementById('like-img1').src="img.html/like.png";
+       }
+
+        function post1(){
+           
+           
+            if(localStorage.getItem("post1id")=="0"){
+                document.getElementById('like-img1').src="img.html/like-blue.png";
+                 localStorage.setItem("post1id","1");
+                // document.getElementById('post1').innerHTML=number(document.getElementById('post1').innerHTML)+1;
+                 document.getElementById('post1').innerHTML="121";
+            }
+            else {
+                document.getElementById('like-img1').src="img.html/like.png";
+              localStorage.setItem("post1id","0");
+              
+            } 
+        }
+
+
+         
+       if(!localStorage.getItem("post2id")){
+           localStorage.setItem("post2id","0");
+          
+       }
+       else if(localStorage.getItem("post2id")=="1"){
+           document.getElementById('like-img2').src="img.html/like-blue.png";
+       }
+       else {
+        document.getElementById('like-img2').src="img.html/like.png";
+       }
+
+        function post2(){
+            
+            if(localStorage.getItem("post2id")=="0"){
+                document.getElementById('like-img2').src="img.html/like-blue.png";
+                 localStorage.setItem("post2id","1");
+               
+            }
+            else {
+                document.getElementById('like-img2').src="img.html/like.png";
+              localStorage.setItem("post2id","0");
+              
+            } 
+        }
+            
+
+        if(!localStorage.getItem("post3id")){
+           localStorage.setItem("post3id","0");
+          
+       }
+       else if(localStorage.getItem("post3id")=="1"){
+           document.getElementById('like-img3').src="img.html/like-blue.png";
+       }
+       else {
+        document.getElementById('like-img3').src="img.html/like.png";
+       }
+
+        function post3(){
+            
+            if(localStorage.getItem("post3id")=="0"){
+                document.getElementById('like-img3').src="img.html/like-blue.png";
+                 localStorage.setItem("post3id","1");
+             
+            }
+            else {
+                document.getElementById('like-img3').src="img.html/like.png";
+              localStorage.setItem("post3id","0");
+              
+            } 
+        }
+
+
+
+      if(!localStorage.getItem("theme")){
+          localStorage.setItem("theme","light");
+      }
+      else if(localStorage.getItem("theme")=="dark"){
+          document.body.classList.toggle("dark-theme");
+          document.getElementById('theme-btn').classList.toggle("theme-btn-dark");
+      }
+
+       function menu(){
+           document.getElementById('left-sidebar').classList.toggle("menu-left-sidebar");
+       }
+
+      { 
+          let x=document.getElementById('more');
+            x.addEventListener("click",()=>{
+             x.style.display="none";
+             document.getElementById('links').style.height="fit-content";
+            });
+        let y=document.getElementById('less');
+            y.addEventListener("click",()=>{
+             x.style.display="flex";
+             document.getElementById('links').style.height="288px";
+            });       
+      }
+      {
+          let x=document.getElementById('close');
+           x.addEventListener("click",()=>{
+             document.getElementById('advertisement').style.display="none";
+             document.getElementById('close-add').innerHTML="advertisement closed."
+             document.getElementById('close-add').style.display="block";
+           });
+      }
+      {
+          let a=document.getElementById('close-chat');
+          let b=document.getElementById('chatty');
+          a.addEventListener("click",()=>{
+              
+              if(b.style.display==="none")
+              {
+                  b.style.display="block";
+                  a.innerHTML="Hide Chat";
+              }
+              else
+              {
+                b.style.display="none";
+                a.innerHTML="Show Chat";
+              }
+          });
+      }
+      {
+        function set(){
+            var x=document.getElementById('setting-menu');
+            x.classList.toggle("setting-menu-display");
+            // if(x.style.display=="none"){
+            //     x.style.display="block";
+            // }
+            // else{
+            //     x.style.display="none";
+            // }
+        }
+       }
+      {
+        function theme(){
+           if(localStorage.getItem("theme")=="light"){
+            document.getElementById('theme-btn').classList.toggle("theme-btn-dark");
+            document.body.classList.toggle("dark-theme");
+            localStorage.setItem("theme","dark");
+           }
+           else if(localStorage.getItem("theme")=="dark"){
+            document.getElementById('theme-btn').classList.remove("theme-btn-dark");
+            document.body.classList.remove("dark-theme");
+            localStorage.setItem("theme","light");
+           }
+        }
+       }
+
+
+  </script>
+
+</body>
+</html>

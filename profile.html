@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Page</title>
+    <link rel="icon" type="image/x-icon" href="img.html\slack.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a476f23d75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+      <div class="left-nav">
+        <a href="BeFriends.html">  <img src="img.html\logo.png" class="profile-page-logo"></a>
+          <ul>
+              <li><a href="#"><img src="img.html\notification.png"></a></li>
+              <li><a href="#"><img src="img.html\inbox.png"></a></li>
+              <li><a href="#"><img src="img.html\video.png"></a></li>
+          </ul>
+      </div>
+      <div class="right-nav">
+         <form class="search-box">
+             <input type="image" src="img.html\search.png" width="15px">
+             <input type="text" class="text" >
+         </form>
+
+         <div class="profile" onclick="set()">
+            <a href="#" ><img src="img.html\profile-pic.png" class="profile-photo" ></a>
+         </div>
+      </div>
+      <div class="setting-menu" id="setting-menu">
+        <div class="setting-menu-inner">
+            <div class="user-info">
+                <img src="img.html\profile-pic.png">
+                <div class="about">
+                    <p>MyalBhesh</p>
+                   <a href="#">See Your Profile</a>
+                </div>
+            </div>
+           <hr>
+            <div class="user-info">
+                <img src="img.html\feedback.png">
+                <div class="about">
+                    <p>Give Feedback</p>
+                    <a href="#">Help us to improve the new design</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="setting-links">
+                <img src="img.html/setting.png" >
+                <a href="#">Settings&Privacy <img src="img.html/arrow.png"></a>
+            </div>
+            <div class="setting-links">
+                <img src="img.html/help.png" >
+                <a href="#">Help&Support <img src="img.html/arrow.png" ></a>
+            </div>
+            <div class="setting-links">
+                <img src="img.html/display.png" >
+                <a href="#">Display&Accessibility <img src="img.html/arrow.png" ></a>
+            </div>
+            <div class="setting-links">
+                <img src="img.html/logout.png" >
+                <a href="#">Logout<img src="img.html/arrow.png" ></a>
+            </div>
+        </div>
+        <div class="theme-btn" id="theme-btn" onclick="theme()">
+            <span class="slider"></span>
+        </div>
+      </div>
+  </nav>
+ 
+  <div class="profile-page">
+      <img src="img.html\mycover.jpg" class="cover-img">
+
+       <div class="profile-details">
+
+           <div class="profile-img">
+                <div class="pro-img">
+                   <img src="img.html\myprofile.JPG" >
+                </div>
+                <div class="profile-details-name">
+                   <p class="name">Aviral Kabir</p> 
+                   <p class="additional">120 friends 21 mutual friends</p>
+                   <img src="img.html/user-1.png" class="friends">
+                   <img src="img.html/user-2.png" class="friends">
+                   <img src="img.html/user-3.png" class="friends">
+                   <img src="img.html/user-4.png" class="friends">
+                </div>
+           </div>
+           
+           <div class="friend-list">
+               <button  class="fri"><img src="img.html\add-friends.png"> friend</button>
+               <button class="message"><img src="img.html/message.png" > Message</button>            
+           </div>
+
+           <a class="more-friend"><i class="fa-solid fa-ellipsis"></i></a >
+       </div>
+       
+       <div class="profile-page-info">
+        
+
+           <div class="info-col">
+
+
+                 <div class="profile-intro">
+                     <h3>intro</h3>
+                     <p class="intro-text">try to break the chain otherwise this world will break you without a reason... 
+                         <img src="img.html/feeling.png" width="18px"></p>
+
+                     <hr>
+                     <ul>
+                         <li><img src="img.html/profile-job.png"> Director at ExploreIndia Foundation.</li>
+                         <li><img src="img.html/profile-study.png"> Studied at JSS Noida.</li>
+                         <li><img src="img.html/profile-study.png"> went to GIC Pratapgarh.</li>
+                         <li><img src="img.html/profile-home.png"> Lives in delhi, India.</li>
+                         <li><img src="img.html/profile-location.png"> From UP,India.</li>
+                     </ul>
+                 </div>
+
+                 <div class="profile-intro">
+                      <div class="title-box">
+                          <h3>Photos</h3>
+                          <a href="#">all photos</a>
+                      </div>
+
+                      <div class="photo-box">
+                          <div><img src="img.html/photo1.png"></div>
+                          <div><img src="img.html/photo2.png"></div>
+                          <div><img src="img.html/photo3.png"></div>
+                          <div><img src="img.html/photo4.png"></div>
+                          <div><img src="img.html/photo5.png"></div>
+                      </div>
+                 </div>
+
+                 
+                 <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="#">all friends</a>
+                    </div>
+                      <p>120( 21 mutual friends)</p>
+                    <div class="friend-box">
+                        <div><img src="img.html/member-2.png"><p>Gautam</p></div>
+                        <div><img src="img.html/member-3.png"><p>Kritika</p></div>
+                        <div><img src="img.html/member-4.png"><p>Abhay</p></div>
+                        <div><img src="img.html/member-5.png"><p>Dheeru</p></div>
+                        <div><img src="img.html/member-6.png"><p>Kanika</p></div>
+                        <div><img src="img.html/member-7.png"><p>Amrendra</p></div>
+                        <div><img src="img.html/member-8.png"><p>Priyanshi</p></div>
+                        <div><img src="img.html/member-9.png"><p>bhagvat</p></div>
+                       
+                    </div>
+               </div>
+           </div>
+
+
+           <div class="post-col">
+            <div class="write-post">
+                <div class="user-info">
+                    <img src="img.html\profile-pic.png">
+                    <div class="about">
+                        <p>MyalBhesh</p>
+                        <small>public<i class="fa-sharp fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+    
+                <div class="textarea">
+                    <textarea rows="5" placeholder="what's on your mind,Bhesh?"></textarea>
+                </div>
+                <div class="feelings">
+                    <a href="#"><img src="img.html\live-video.png" >Live Video</a>
+                    <a href="#"><img src="img.html/photo.png" >Photo/Video</a>
+                    <a href="#"><img src="img.html/feeling.png" >feelings/activity</a>
+                </div>
+            </div>
+             
+            <div class="post-container">
+                <div class="post-main">
+                 <div class="user-info">
+                     <img src="img.html\profile-pic.png">
+                     <div class="about">
+                         <p>MyalBhesh</p>
+                        <span>june 24,2023 12:30pm</span>
+                     </div>
+                 </div> 
+                 <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p>like and share this video with friends,<span>@rankers tutorials</span> facebook page on your post.Ask your doubts in comments 
+                    <a href="#">#rankers tutorials</a> <a href="#">#YoutubeChannel</a>
+                 </p>
+                 <img src="img.html\feed-image-1.png">
+                 <div class="post-like">
+                     <div class="l-s-k">
+                         <div class="like"><img src="img.html/like.png">120</div>
+                         <div class="comments"><img src="img.html/comment.png">21</div>
+                         <div class="share"><img src="img.html/share.png">45</div>
+                     </div>
+                     <div class="post-profile">
+                         <img src="img.html/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                     </div>
+                 </div>
+             </div>
+            
+             <div class="post-container">
+                <div class="post-main">
+                 <div class="user-info">
+                     <img src="img.html\profile-pic.png">
+                     <div class="about">
+                         <p>MyalBhesh</p>
+                        <span>august 24,2023 3:30pm</span>
+                     </div>
+                 </div> 
+                 <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p>like and share this video with friends,<span>@rankers tutorials</span> facebook page on your post.Ask your doubts in comments 
+                    <a href="#">#rankers tutorials #subscribe</a>
+                 </p>
+                 <img src="img.html\feed-image-2.png">
+                 <div class="post-like">
+                     <div class="l-s-k">
+                         <div class="like"><img src="img.html/like.png">150</div>
+                         <div class="comments"><img src="img.html/comment.png">41</div>
+                         <div class="share"><img src="img.html/share.png">54</div>
+                     </div>
+                     <div class="post-profile">
+                         <img src="img.html/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                     </div>
+                 </div>
+             </div>
+    
+             <div class="post-container">
+                <div class="post-main">
+                 <div class="user-info">
+                     <img src="img.html\profile-pic.png">
+                     <div class="about">
+                         <p>MyalBhesh</p>
+                        <span>november 24,2023 1:30pm</span>
+                     </div>
+                 </div> 
+                 <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p>like and share this video with friends,<span>@rankers tutorials</span> facebook page on your post.Ask your doubts in comments 
+                    <a href="#">#rankers tutorials #subscribe</a>
+                 </p>
+                 <img src="img.html\feed-image-3.png">
+                 <div class="post-like">
+                     <div class="l-s-k">
+                         <div class="like"><img src="img.html/like.png">150</div>
+                         <div class="comments"><img src="img.html/comment.png">41</div>
+                         <div class="share"><img src="img.html/share.png">54</div>
+                     </div>
+                     <div class="post-profile">
+                         <img src="img.html/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                     </div>
+                 </div>
+             </div>
+           </div>
+       </div>
+  </div>
+
+
+  <div class="footer">
+      <p>Copyright 2023-rankers Tutorials YoutubeChannel</p>
+  </div>
+
+
+  <script>
+ 
+    if(!localStorage.getItem("theme")){
+        localStorage.setItem("theme","light");
+    }
+    else if(localStorage.getItem("theme")=="dark"){
+        document.body.classList.toggle("dark-theme");
+        document.getElementById('theme-btn').classList.toggle("theme-btn-dark");
+    }
+
+
+     
+   
+    
+    {
+      function set(){
+          var x=document.getElementById('setting-menu');
+          x.classList.toggle("setting-menu-display");
+          // if(x.style.display=="none"){
+          //     x.style.display="block";
+          // }
+          // else{
+          //     x.style.display="none";
+          // }
+      }
+     }
+    {
+      function theme(){
+         if(localStorage.getItem("theme")=="light"){
+          document.getElementById('theme-btn').classList.toggle("theme-btn-dark");
+          document.body.classList.toggle("dark-theme");
+          localStorage.setItem("theme","dark");
+         }
+         else if(localStorage.getItem("theme")=="dark"){
+          document.getElementById('theme-btn').classList.remove("theme-btn-dark");
+          document.body.classList.remove("dark-theme");
+          localStorage.setItem("theme","light");
+         }
+      }
+     }
+
+
+</script>
+</body>
+</html>
