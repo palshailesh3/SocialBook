@@ -6,7 +6,7 @@
     <title>Profile-Page</title>
     <link rel="icon" type="image/x-icon" href="img.html\slack.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <script src="https://kit.fontawesome.com/a476f23d75.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -266,48 +266,6 @@
   </div>
 
 
-  <script>
  
-    if(!localStorage.getItem("theme")){
-        localStorage.setItem("theme","light");
-    }
-    else if(localStorage.getItem("theme")=="dark"){
-        document.body.classList.toggle("dark-theme");
-        document.getElementById('theme-btn').classList.toggle("theme-btn-dark");
-    }
-
-
-     
-   
-    
-    {
-      function set(){
-          var x=document.getElementById('setting-menu');
-          x.classList.toggle("setting-menu-display");
-          // if(x.style.display=="none"){
-          //     x.style.display="block";
-          // }
-          // else{
-          //     x.style.display="none";
-          // }
-      }
-     }
-    {
-      function theme(){
-         if(localStorage.getItem("theme")=="light"){
-          document.getElementById('theme-btn').classList.toggle("theme-btn-dark");
-          document.body.classList.toggle("dark-theme");
-          localStorage.setItem("theme","dark");
-         }
-         else if(localStorage.getItem("theme")=="dark"){
-          document.getElementById('theme-btn').classList.remove("theme-btn-dark");
-          document.body.classList.remove("dark-theme");
-          localStorage.setItem("theme","light");
-         }
-      }
-     }
-
-
-</script>
 </body>
 </html>
